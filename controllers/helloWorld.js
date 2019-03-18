@@ -1,7 +1,9 @@
-module.exports = function(router) {
-    router.get('/hello-world', function(req, res) {
-        res.json({data: 'Hello World!'});
-    });
+import express from "express";
 
-    return router;
-};
+const router = express();
+
+router.get("/hello-world", function(req, res) {
+  res.json({ data: "Hello World!" });
+});
+
+export default router;

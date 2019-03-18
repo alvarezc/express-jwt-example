@@ -1,5 +1,5 @@
-var app = require('./server.js');
-var config = require('./config.js');
+import app from "./server";
+import config from "./config";
 
 /*
  * Start server
